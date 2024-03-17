@@ -1,7 +1,11 @@
 [package]
 name = "perfer"
+authors = ["Væñgír"]
 version = "0.1.1"
+description = "A CLI tool which let's you track the memory used by a program."
 edition = "2021"
+repository = "https://github.com/Vaengir-Projects/perfer.git"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
