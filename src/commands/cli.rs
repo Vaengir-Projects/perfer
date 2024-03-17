@@ -16,18 +16,19 @@ pub fn build_cli() -> Command {
         .arg(
             Arg::new("process")
                 .required(true)
-                .help("Command you wish to track\nMulti word commands need to be put in quotes.")
+                .help("Command you wish to track.")
                 .action(ArgAction::Append),
         )
         .arg(
             Arg::new("verbose")
                 .short('v')
                 .long("verbose")
-                .help("Use verbose output")
+                .help("Print stdout of process")
                 .action(ArgAction::SetTrue),
         )
         .arg(
             Arg::new("generator")
+                .short('G')
                 .long("generate")
                 .action(ArgAction::Set)
                 .value_parser(value_parser!(Shell)),
